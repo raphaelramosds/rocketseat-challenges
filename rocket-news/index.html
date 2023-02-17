@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind setup -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <style type="text/tailwindcss">
+
+    </style>
+
+    <!-- Page title -->
+
+    <title>RocketNews</title>
+
+</head>
+
+<body class="bg-bgcolor text-lg">
+    <main class="flex flex-row">
+
+        <!-- Seção da esquerda -->
+
+        <article class="m-10">
+
+            <!-- Logo RocketNews. -->
+
+            <header>
+                <object data="./assets/logo.svg" width="389" height="94"></object>
+            </header>
+
+            <!-- Descrição -->
+
+            <section class="mt-20 mb-10">
+                <h3 class="font-title font-bold text-titlecolor text-xl">atualize ideias e informações em 5 minutos</h3>
+                <p class="font-body font-bold text-textcolor">tudo que você precisa saber para começar seu dia bem e
+                    informado</p>
+                <p class="font-body text-textcolor">noticias sobre o universo Rocketseat, e tudo o que precisa para
+                    começar o dia melhor.
+                    perfeito para se preparar para codar ☕</p>
+            </section>
+
+            <!-- Formulário -->
+
+            <section class="relative">
+                <form class="text-formcolor" action="#">
+                    <label class="font-bold font-body pb-2 block" for="email">Insira seu e-mail:</label>
+                    <div class="flex flex-row absolute border-l-4 border-titlecolor shadow-lg shadow-bgcolor">
+                        <input class="p-4 w-[720px] text-sm placeholder:text-sm focus:outline-none" type="email"
+                            placeholder="oi@rocketseat.com">
+                        <button class="p-4 bg-buttoncolor" type="submit">
+                            <svg class="stroke-textcolor" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Ler as notícias -->
+
+            <div class="mt-20">
+                <a class="text-buttoncolor font-body font-bold" href="#">deixe-me ler primeiro</a>
+                <svg class="stroke-buttoncolor inline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" class="feather feather-arrow-right">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </div>
+        </article>
+
+        <!-- Imagem lateral -->
+
+        <aside class="h-screen">
+            <img class="h-full object-cover" src="./assets/read_news.jpg" alt="">
+        </aside>
+
+    </main>
+
+</body>
+
+</html>

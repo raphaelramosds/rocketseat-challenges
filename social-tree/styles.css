@@ -1,0 +1,7 @@
+nav ul li {
+    margin-bottom: 1em;
+}
+
+div a ~ a {
+    margin-left: 2em;
+}

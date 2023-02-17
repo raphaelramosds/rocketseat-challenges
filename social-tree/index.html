@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind setup -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <style type="text/tailwindcss">
+
+        .link {
+            @apply border-2 border-primary w-80 font-bold rounded px-4 py-2 block
+        }
+
+    </style>
+
+    <!-- Page title -->
+
+    <title>Social Tree</title>
+
+</head>
+
+<body class="flex flex-col justify-center h-screen text-primary bg-body font-body">
+
+    <!-- Wrapper -->
+
+    <main class="mx-auto my-0 text-center">
+
+        <!-- Imagem -->
+
+        <div>
+            <img class="w-52 h-52 mx-auto my-0 border-2 border-primary p-1 rounded-full object-cover"
+                src="./assets/photo.jpg">
+        </div>
+
+        <!-- Instagram -->
+
+        <div class="pt-4 pb-7">
+            <span>@raphaelrdsa</span>
+        </div>
+
+        <!-- Links -->
+
+        <nav>
+            <ul>
+                <li><a class="link" href="#">LINK 1</a></li>
+                <li><a class="link" href="#">LINK 2</a></li>
+                <li><a class="link" href="#">LINK 3</a></li>
+                <li><a class="link" href="#">LINK 4</a></li>
+            </ul>
+        </nav>
+
+        <!-- Redes sociais -->
+
+        <div class="flex flex-row justify-center pt-9">
+            <a href="#"><img src="./assets/twitter.svg"></a>
+            <a href="#"><img src="./assets/twitch.svg"></a>
+            <a href="#"><img src="./assets/instagram.svg"></a>
+            <a href="#"><img src="./assets/linkedin.svg" alt=""></a>
+            <a href="#"><img src="./assets/github.svg" alt=""></a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
