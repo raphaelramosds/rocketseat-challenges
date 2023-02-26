@@ -19,3 +19,9 @@ Develop a simple web page using HTML and CSS that will serve in the future for l
 In this challenge you must create a page with a list of links (menu) that can be used in social network profiles to direct the user to the chosen location. Using HTML and CSS.
 
 ![Social Tree](./assets/socialtree.png)
+
+## Switcher
+
+In this challenge you must create a toggle that switches the page's theme between light and dark.
+
+![Switcher](./assets/preview.gif)
