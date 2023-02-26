@@ -23,7 +23,7 @@ setInterval(function () {
 
     if (seconds <= 0) {
 
-        if (days >= 0 && hours <= 0 & minutes <= 0) {
+        if (days >= 0 && hours <= 0 && minutes <= 0) {
             days -= 1;
             hours = 23;
             minutes = 59;
