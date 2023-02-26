@@ -20,7 +20,7 @@ In this challenge you must create a page with a list of links (menu) that can be
 
 ![Social Tree](./assets/socialtree.png)
 
-## Switcher
+## Theme Switcher
 
 In this challenge you must create a toggle that switches the page's theme between light and dark.
 
