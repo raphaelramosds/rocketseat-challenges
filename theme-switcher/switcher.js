@@ -4,10 +4,8 @@ switcher.addEventListener('change', function(event) {
     let body = document.querySelector('body');
 
     if (event.target.checked) {
-        body.classList.remove('bg-light'); 
-        body.classList.add('bg-dark');
+        body.style.backgroundColor = "#F1F1F1";
     } else {
-        body.classList.remove('bg-dark'); 
-        body.classList.add('bg-light');
+        body.style.backgroundColor = "#292C35";
     }
 });

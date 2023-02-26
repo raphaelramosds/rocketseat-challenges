@@ -4,6 +4,38 @@
 	--label: #111;
 }
 
+body {
+	background-color: var(--dark);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+
+/* SVG no label */
+
+.wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.wrapper::before {
+	content: url(./assets/moon.svg);
+	position: absolute;
+	z-index: 10;
+	top:.25em;
+	left:.25em;
+}
+
+.wrapper::after {
+	content: url(./assets/sun.svg);
+	position: absolute;
+	z-index: 10;
+	top:.25em;
+	right:.5em;
+}
+
 /* Esconder checkbox padrão */
 
 input[type="checkbox"].toggle {
@@ -24,9 +56,9 @@ input[type="checkbox"].toggle + label {
 
 input[type="checkbox"].toggle + label::before {
 	content: "";
-	width: 2em;
-	height: 1em;
-	background: hsl(0,80%,90%);
+	width: 4.5em;
+	height: 2em;
+	background: var(--label);
 	border-radius: 1em;
 	margin-right: .25em;
 	transition: 200ms ease-in-out;
@@ -36,23 +68,23 @@ input[type="checkbox"].toggle + label::before {
 
 input[type="checkbox"].toggle + label::after {
 	position: absolute;
-	left:.1em;
+	z-index: 20;
+	left:.15em;
 	content: "";
-	width: .9em;
-	height: .9em;
-	background: hsl(0,80%,60%);
+	width: 1.85em;
+	height: 1.8em;
+	background: var(--light);
 	border-radius: 1em;
 	margin-right: .25em;
 	transition: 200ms ease-in-out;
 }
 
-/* Efeito quando checked*/
+/* Efeitos quando checked*/
 
 input[type="checkbox"].toggle:checked + label::after {
-	transform: translateX(100%);
-	background: hsl(100,70%,60%);
+	transform: translateX(2.4em);
 }
 
 input[type="checkbox"].toggle:checked + label::before {
-	background: hsl(100,70%,90%);
+	
 }
