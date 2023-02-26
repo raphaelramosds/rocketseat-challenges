@@ -1,4 +1,4 @@
-var switcher = document.getElementById('switcher');
+var switcher = document.getElementById('check');
 
 switcher.addEventListener('change', function(event) {
     let body = document.querySelector('body');

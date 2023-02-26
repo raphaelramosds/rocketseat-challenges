@@ -7,10 +7,10 @@ var secondsNode = document.querySelector("#seconds span");
 
 // Setar valores
 
-var days = 8;
-var hours = 12;
-var minutes = 44;
-var seconds = 28;
+var days = 0;
+var hours = 0;
+var minutes = 30;
+var seconds = 0;
 
 // Temporizador dos segundos
 
